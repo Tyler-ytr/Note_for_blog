@@ -1,0 +1,1 @@
+请使用vscode以及vscode的markdown math插件或者其他markdown编辑软件打开
