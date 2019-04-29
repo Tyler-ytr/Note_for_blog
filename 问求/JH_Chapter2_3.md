@@ -3,3 +3,23 @@
 - 定义:
   - alphabet:任何非空的有限集合
   - symbol:某个alphabet里面的元素
+    - e.g.: $\sum_{bool}=\{0,1\}$
+    - $ \sum_{lat}=\{a,b,...z\} $
+  - word: 在某个alphabet里面的有限个symbol的序列
+  - empty word $\lambda$: 唯一的包含zero symnol的word;
+  - $\sum ^*$: 包含所有的alphabet $\sum$ 的word构成的集合
+    - for $\sum =\{a,b\},\sum^*=\{\lambda,a,b,aa,ab,ba,bb,aaa,.....\}$
+  - length of a word w: 记作|w|,表示w里面的symbols数量
+  - $\#_{a}(w)$:a在w里面出现的次数
+  - $\sum ^n$=$\{x\in \sum^*|~|x|=n\}$
+    - e.g. $\{a,b\}^{3}=\{aaa,aab,aba,baa,abb,bab,bba,bbb\}$
+  - $\sum ^+=sum ^*-\{\lambda \}$
+  - vw($v\cdot w$):v和w的连结,v和w是两个word;
+  - prefix of word w: w=vu中的v;其中u是$\sum$上的某些word
+  - suffix of word w: w=xu中的u;
+  - subword of word w: w=uzv中的z;
+  - language: Every set $L\subseteq \sum ^*$ is called a language over $\sum$;L^C=$\sum ^*-L$(L的补集)
+    - $L_1L_2=L_1\circ L_2=\{uv\in (\sum_1 \cup \sum_2)^*|u\in L_1~ and ~v \in L_2\}$
+      - $\{a^nb^{2n}|n\in\mathbb{N}\},\{a,b\}$是$\{a,b\}$中的languages
+  - 定义$\sum ^*$上面的canonical ordering:
+    - 假设$\sum=\{s_1,...s_m\},m\geq 1$,并且让$s_1<s_2...<s_m$
