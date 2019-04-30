@@ -18,7 +18,7 @@
   - prefix of word w: w=vu中的v;其中u是$\sum$上的某些word
   - suffix of word w: w=xu中的u;
   - subword of word w: w=uzv中的z;
-  - language: Every set $L\subseteq \sum ^*$ is called a language over $\sum$;L^C=$\sum ^*-L$(L的补集)
+  - language: Every set $L\subseteq \sum ^*$ is called a language over $\sum$;$L^C$=$\sum ^*-L$(L的补集)
     - $L_1L_2=L_1\circ L_2=\{uv\in (\sum_1 \cup \sum_2)^*|u\in L_1~ and ~v \in L_2\}$
       - $\{a^nb^{2n}|n\in\mathbb{N}\},\{a,b\}$是$\{a,b\}$中的languages
   - 定义$\sum ^*$上面的canonical ordering:
@@ -29,13 +29,21 @@
 - 一个算法可以看作是一个映射,$from~\sum^*_1~to~\sum_2^*$,一个算法问题可以当作是一个从$\sum^*_1$到$\sum^*_2$的函数或者是一个$\sum^*_1\times \sum^*_2$的关系 
 - 下面主要讨论decision problems 以及optimization problems;
 ### decision problem:
-  - decision 是一个元组(L,U,$\sum$),($\sum$是一个alphabet,$L\subseteq U\subseteq\sum^*$);
-  - 用来解决这个decision problem的algorithm A,对U中的任意一个x:
-    - A(x)=1 如果$x\in L$
-    - A(x)=0 如果$s\in U-L~(x\not\in L)$
+- decision 是一个元组(L,U,$\sum$),($\sum$是一个alphabet,$L\subseteq U\subseteq\sum^*$);
+- 用来解决这个decision problem的algorithm A,对U中的任意一个x:
+  - A(x)=1 如果$x\in L$
+  - A(x)=0 如果$s\in U-L~(x\not\in L)$
   - 或者另外一种形式:
   ![avatar][JH2]
   - 很多问题里面U=$\sum^*$,这时候用$(\mathbf{L},\mathbf{U})$代替$(L,\sum^*,\sum)$
+- Primality Testing
+  - 问题:给你一个正整数,它是素数吗？
+  - 转化：decision problem (Prim,$\sum _{bool}$):
+    $$Prim=\{w\in \{0,1\}^*|Number(w)~is~a~prime\}$$
+    - 另外一种:
+    Input:     An x $\in \sum_{bool}^*$
+    Output : &"yes" if Number(x) is a prime
+    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"no" otherwise
 
 
 
