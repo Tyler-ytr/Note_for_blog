@@ -7,6 +7,7 @@
 6.  安装toolbox,cygwin,anaconda,Python环境;
 7.  安装Mingw:(https://www.jianshu.com/p/e9ff7b654c4a  )notepad++
 8.  配置了git(https://segmentfault.com/a/1190000002645623 https://zhuanlan.zhihu.com/p/31417255)
+9.  配置Clion以及Pycharm
 
 
 
