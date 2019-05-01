@@ -137,7 +137,10 @@
   - (0/1-LP)O/1-Linear Programming:0/1规划问题;
   - Maximum Linear Equation Problem Mod k (MAX-LINMonk):
 ## 2.3.3    
-
+- 两种复杂度度量方式:uniform cost measurement and the logarithmic cost measurement
+  - uniform cost:假设两个整数的操作cost是1,不关心它们的长度;
+  -  logarithmic cost:每一个基本操作的代价是操作数二进制表示的大小之和;因此计算两个n位整数相乘的算法需要$\Omega(n\cdot logn)$二进制操作;
+- 假设A是一个实现从$\sum^*_I$到$\sum^*_O$的算法,$Time_A(x)$表示A在input x上的计算时间复杂度,$Space_A(x)$表示A在input x上的计算的空间复杂度;$Time_A(n)$表示A在input x上的计算时间复杂度的最大值,$Space_A(x)$表示A在input x上的计算的空间复杂度的最大值;
 
 
 
