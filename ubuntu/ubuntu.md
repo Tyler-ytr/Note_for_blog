@@ -4,39 +4,39 @@
 - 重装很多次的原因是因为没有在重装之前完全的格式化分区,我建议每一次玩具坏了都要用windows格式化一次呜呜呜
 - 下面是正式的复活操作:
 - sudo passwd(修改sudo密码)
-sudo apt-get update
-sudo apt-get install vim
+  sudo apt-get update
+  sudo apt-get install vim
 - 更换国内源,我选的是清华源;
-https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
-sudo vim /etc/apt/sources.list
-然后copy-paste;
-然后sudo apt-get update
-sudo apt-get upgrade
+  https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+  sudo vim /etc/apt/sources.list
+  然后copy-paste;
+  然后sudo apt-get update
+  sudo apt-get upgrade
 - 然后安装搜狗输入法(之前几次都因为它炸了我不信了……)
-https://blog.csdn.net/qq_33159059/article/details/85019467
-参考了上述blog;
+  https://blog.csdn.net/qq_33159059/article/details/85019467
+  参考了上述blog;
 - 然后搭建基本的环境,主要参考的PA讲义：
-su
-apt-get install build-essential
-apt-get install man                # on-line reference manual
-apt-get install gcc-doc            # manual for GCC
-apt-get install gdb                # GNU debugger
-apt-get install git                # reversion control system
-apt-get install libreadline-dev    # a library to use compile the project later
-apt-get install libsdl2-dev        # a library to use compile the project later
-apt-get install qemu-system-x86    # QEMU
+  su
+  apt-get install build-essential
+  apt-get install man                # on-line reference manual
+  apt-get install gcc-doc            # manual for GCC
+  apt-get install gdb                # GNU debugger
+  apt-get install git                # reversion control system
+  apt-get install libreadline-dev    # a library to use compile the project later
+  apt-get install libsdl2-dev        # a library to use compile the project later
+  apt-get install qemu-system-x86    # QEMU
 
 - 然后安装chrome，配置小飞机;
-chrome bing 搜索就行啦
-我有gmail帐号,所以同步的很舒服
+  chrome bing 搜索就行啦
+  我有gmail帐号,所以同步的很舒服
 
 - 小飞机:
-我选择的是shadowsocks-libev(因为之前炸了好多次qt5以及普通的shadowsocks）:
-mkdir shadowsocks
-cd shadowsocks
-touch shadowsocks.json
-vim shadowsocks.json
-{
+  我选择的是shadowsocks-libev(因为之前炸了好多次qt5以及普通的shadowsocks）:
+  mkdir shadowsocks
+  cd shadowsocks
+  touch shadowsocks.json
+  vim shadowsocks.json
+  {
     "server":"my\_server\_ip",
     "server_port":53450,
     "local_address": "127.0.0.1",
@@ -45,22 +45,22 @@ vim shadowsocks.json
     "timeout":300,
     "method":"aes-256-gcm",
     "fast_open": false
-}
-然后ss-local -c ~/shadowsocks/shadowsocks/json & 
-自己测试一下;
-然后写一个自启动脚本
-touch ~/.ssstart.sh
-vim ~/.ssstart.sh
-内容是:
-  #!/bin/bash
-  ss-local -c ~/shadowsocks/shadowsocks.json &
-然后vim ~/.bashrc
-在末尾添加:
-alias ss='. ~/.ssstart.sh'
-:q
-退出vim之后：
-source ~/.bashrc
-尝试一下ss,熟悉的界面出现啦！
+  }
+  然后ss-local -c ~/shadowsocks/shadowsocks/json & 
+  自己测试一下;
+  然后写一个自启动脚本
+  touch ~/.ssstart.sh
+  vim ~/.ssstart.sh
+  内容是:
+    #!/bin/bash
+    ss-local -c ~/shadowsocks/shadowsocks.json &
+  然后vim ~/.bashrc
+  在末尾添加:
+  alias ss='. ~/.ssstart.sh'
+  :q
+  退出vim之后：
+  source ~/.bashrc
+  尝试一下ss,熟悉的界面出现啦！
 
 
 
@@ -75,7 +75,7 @@ source ~/.bashrc
 	chsh -s /bin/zsh (设置zsh为默认)
 	重启计算机,你会发现你的终端变了
   - 安装oh-my-zsh插件
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
   - 不改theme一无所有
 	- 准备使用powerline主题
 	- 首先安装字体：
