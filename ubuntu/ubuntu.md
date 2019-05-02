@@ -101,7 +101,7 @@
 - OSlab还需要:
   - sudo apt-get install curl
   - sudo apt-get install  gcc-multilib
-
+- git 配置请搜索廖雪峰
 
 
 
