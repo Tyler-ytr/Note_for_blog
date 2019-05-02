@@ -70,6 +70,7 @@ source ~/.bashrc
 
 
 - 网易云音乐终于更新啦,上官网直接下载就行了,不需要骚操作啦
+- 安装vscode
 - 然后就是配置环节，主要配置zsh,tmux,还有vim;
 - zsh:
   - https://www.sysgeek.cn/install-zsh-shell-ubuntu-18-04/  https://segmentfault.com/a/1190000013612471
@@ -94,6 +95,9 @@ rm -rf fonts
 	- 然后vim ~/.zshrc 改配置
 	- 安装powerline:sudo apt install powerline 
 	- 我的配置见文件夹的.zshrc	
+	- 颜色选择困难请：for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"
+	- 改完之后记得source ~/.zshrc
+
 	
 
 
