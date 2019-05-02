@@ -3,9 +3,9 @@
 - 之前崩的原因是搜狗输入法安装的时候没有提前安装fcix框架,导致乱码然后系统就傻掉了;
 - 重装很多次的原因是因为没有在重装之前完全的格式化分区,我建议每一次玩具坏了都要用windows格式化一次呜呜呜
 - 下面是正式的复活操作:
-- sudo passwd(修改sudo密码)
-  sudo apt-get update
-  sudo apt-get install vim
+-   sudo passwd(修改sudo密码)
+    sudo apt-get update
+   sudo apt-get install vim
 - 更换国内源,我选的是清华源;
   https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
   sudo vim /etc/apt/sources.list
@@ -98,6 +98,9 @@
   进入setting目录;
   bash spf13-vim.sh
   (何伟nb！)
+- OSlab还需要:
+  - sudo apt-get install curl
+  - sudo apt-get install  gcc-multilib
 
 
 
