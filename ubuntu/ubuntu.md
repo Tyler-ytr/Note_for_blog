@@ -97,6 +97,7 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 - vim:spf13-vim 懒人vim
   进入setting目录;
   bash spf13-vim.sh
+  (何伟nb！)
 
 
 
