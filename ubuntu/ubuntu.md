@@ -98,6 +98,11 @@
   进入setting目录;
   bash spf13-vim.sh
   (何伟nb！)
+  - 这个时候的vim没有办法和系统剪切版交互,我根据https://www.cnblogs.com/memory4young/p/could-not-use-system-clipboard-in-vim.html
+  下载了其他一些插件:
+    sudo apt-get install vim-scripts vim-gtk vim-gnome
+  这样 vim --version|grep "cliboard"会看到+clipboard;
+  然后就可以用+y,+p实现系统剪切版和vim剪切版的交互啦！
 - OSlab还需要:
   - sudo apt-get install curl
   - sudo apt-get install  gcc-multilib
