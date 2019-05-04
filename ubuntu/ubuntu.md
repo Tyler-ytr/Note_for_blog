@@ -107,7 +107,7 @@
   - sudo apt-get install curl
   - sudo apt-get install  gcc-multilib
 - git 配置请搜索廖雪峰 -->
-#Ubuntu 配置记录
+# Ubuntu 配置记录
 这是我今天第四次重装ubuntu,心情非常悲痛;
 ## 反思
 -   之前崩的原因是搜狗输入法安装的时候没有提前安装fcix框架,导致乱码然后系统就傻掉了;
@@ -195,7 +195,7 @@
 
 ##### zsh安装与美化
 -   学习了:https://www.sysgeek.cn/install-zsh-shell-ubuntu-18-04/ 
-https://segmentfault.com/a/1190000013612471这两篇教程;
+https://segmentfault.com/a/1190000013612471 这两篇教程;
 -   感谢何伟的配置文件;
 -   相应的setting请参考我的github[相关内容](https://github.com/larryytr/Note_for_blog/tree/master/ubuntu).
 -   安装zsh:
