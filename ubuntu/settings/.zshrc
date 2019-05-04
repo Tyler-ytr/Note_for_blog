@@ -1,4 +1,6 @@
+export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -83,7 +85,19 @@ POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{yellow}%F{black} "larryytr" %k%F{y
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
+plugins=(
+  git
+  extract
+  z
+  #zsh-syntax-highlighting
+  #bundler
+  #dotenv
+  #osx
+  #rake
+  #rbenv
+  #ruby
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,3 +127,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #source /usr/larryytr/powerlevel9k/powerlevel9k.zsh-theme
+#
+#
+alias ss='. ~/.ssstart.sh'
+
+
+
+
+#环境变量:
+export STUID=171240565
+export STUNAME=殷天润
+export AM_HOME=/home/larryytr/work/OS/OSlab/os-workbench/abstract-machine
+export TASK=/home/larryytr/work/OS/OSlab/os-workbench/kernel
+
