@@ -6,7 +6,7 @@
     - e.g.: $\sum_{bool}=\{0,1\}$
     - $ \sum_{lat}=\{a,b,...z\} $
   - word: 在某个alphabet里面的有限个symbol的序列
-  - empty word $\lambda$: 唯一的包含zero symnol的word;
+  - empty word $\lambda$: 唯一的包含zero symbol的word;
   - $\sum ^*$: 包含所有的alphabet $\sum$ 的word构成的集合
     - for $\sum =\{a,b\},\sum^*=\{\lambda,a,b,aa,ab,ba,bb,aaa,.....\}$
   - length of a word w: 记作|w|,表示w里面的symbols数量
