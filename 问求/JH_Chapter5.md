@@ -13,6 +13,15 @@
 
 
 ### 5.2.1 基本概念
+- 时间复杂度定义 P345
+
+#### 拉斯维加斯
+- e.g. (RQS)快排,找第k个的“快排”
+- one-way (communication) protocol;
+
+#### ONE-SIDED-ERROR MONTE CARLO ALGORITHMS.
+- 仅仅用于决策问题;
+- 
 
 
 
